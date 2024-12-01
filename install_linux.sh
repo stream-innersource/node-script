@@ -60,6 +60,21 @@ if ! command -v docker-compose &> /dev/null; then
     chmod +x /usr/local/bin/docker-compose
 fi
 
+# Check if git is installed
+if ! command -v git &> /dev/null; then
+    echo "Installing git..."
+    if [[ "$OS" == *"Ubuntu"* ]] || [[ "$OS" == *"Debian"* ]]; then
+        apt-get install -y git
+    elif [[ "$OS" == *"CentOS"* ]] || [[ "$OS" == *"Red Hat"* ]]; then
+        yum install -y git
+    fi
+fi
+
+# Clone repository
+echo "Cloning repository..."
+git clone https://github.com/stream-innersource/node-script
+cd node-script
+
 # Run docker-compose
 echo "Starting services..."
 docker-compose up -d 

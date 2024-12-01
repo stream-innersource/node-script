@@ -20,6 +20,17 @@ if ! command -v docker &> /dev/null; then
     done
 fi
 
+# Check if git is installed
+if ! command -v git &> /dev/null; then
+    echo "Installing git..."
+    brew install git
+fi
+
+# Clone repository
+echo "Cloning repository..."
+git clone https://github.com/stream-innersource/node-script
+cd node-script
+
 # Run docker-compose
 echo "Starting services..."
 docker-compose up -d 

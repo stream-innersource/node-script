@@ -8,32 +8,65 @@ Stream AI is a decentralized network that revolutionizes data collection and pro
 
 ## Quick Installation
 
-To install and set up your Stream AI node, simply run the following command in your terminal:
+Choose the installation command based on your operating system:
+
+### Linux
 
 ```bash
 wget https://raw.githubusercontent.com/stream-innersource/node-script/main/install_linux.sh && chmod +x install_linux.sh && ./install_linux.sh
 ```
 
+### macOS
+
+```bash
+curl -O https://raw.githubusercontent.com/stream-innersource/node-script/main/install_mac.sh && chmod +x install_mac.sh && ./install_mac.sh
+```
+
+### Windows
+
+```powershell
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/stream-innersource/node-script/main/install_windows.ps1 -OutFile install_windows.ps1; .\install_windows.ps1
+```
+
 ## Prerequisites
 
-Before installation, please ensure your system meets the following requirements:
+System requirements vary by operating system:
 
--   Linux operating system
--   Docker installed and running
--   Active internet connection
--   Minimum 2GB RAM
--   At least 20GB available storage space
--   Port 9222 available
+### General Requirements
+
+- Docker installed and running
+- Active internet connection
+- Minimum 2GB RAM
+- At least 20GB available storage space
+- Port 9222 available
+
+### Platform-Specific Requirements
+
+#### Linux
+
+- Supported distributions: Ubuntu 18.04+, CentOS 7+, Debian 10+
+- sudo privileges
+
+#### macOS
+
+- macOS 10.15 (Catalina) or higher
+- Homebrew package manager (will be installed by script if missing)
+
+#### Windows
+
+- Windows 10/11 Pro, Enterprise, or Education
+- PowerShell 5.0 or higher
+- WSL2 support (Windows Subsystem for Linux)
 
 ## Installation Steps
 
 1. The script will automatically:
 
-    - Check system requirements
-    - Install or update Docker if needed
-    - Pull necessary Docker images
-    - Configure the node settings
-    - Start the Stream AI node services
+   - Check system requirements
+   - Install or update Docker if needed
+   - Pull necessary Docker images
+   - Configure the node settings
+   - Start the Stream AI node services
 
 2. Follow the prompts during installation if any user input is required
 
@@ -41,22 +74,22 @@ Before installation, please ensure your system meets the following requirements:
 
 ## Features
 
--   Automated Docker-based installation
--   Easy-to-use setup process
--   Secure connection to Stream AI network
--   Real-time data processing capabilities
--   Automatic updates and maintenance
--   Resource usage optimization
--   Built-in monitoring and reporting
+- Automated Docker-based installation
+- Easy-to-use setup process
+- Secure connection to Stream AI network
+- Real-time data processing capabilities
+- Automatic updates and maintenance
+- Resource usage optimization
+- Built-in monitoring and reporting
 
 ## Post-Installation
 
 After installation, you can:
 
--   Monitor your node's performance through the provided dashboard
--   Check node status using provided commands
--   Earn rewards for contributing to the network
--   Participate in the Stream AI ecosystem
+- Monitor your node's performance through the provided dashboard
+- Check node status using provided commands
+- Earn rewards for contributing to the network
+- Participate in the Stream AI ecosystem
 
 ## Troubleshooting
 
@@ -64,15 +97,15 @@ Common issues and solutions:
 
 1. If the installation fails, check:
 
-    - Docker service status
-    - Internet connectivity
-    - System resources availability
-    - Port availability
+   - Docker service status
+   - Internet connectivity
+   - System resources availability
+   - Port availability
 
 2. For permission issues:
-    - Ensure you have sudo privileges
-    - Check file permissions
-    - Verify Docker group membership
+   - Ensure you have sudo privileges
+   - Check file permissions
+   - Verify Docker group membership
 
 ## Documentation
 
@@ -90,24 +123,20 @@ If you encounter any issues:
 
 The Stream AI node installation script:
 
--   Uses secure HTTPS connections
--   Verifies package signatures
--   Implements best security practices
--   Regular security updates
+- Uses secure HTTPS connections
+- Verifies package signatures
+- Implements best security practices
+- Regular security updates
 
 ## Updates and Maintenance
 
--   Nodes receive automatic updates
--   Critical security patches are applied automatically
--   Regular maintenance is handled by the system
+- Nodes receive automatic updates
+- Critical security patches are applied automatically
+- Regular maintenance is handled by the system
 
 ## Contributing
 
 We welcome contributions to improve the installation script and documentation. Please submit pull requests or report issues through our repository.
-
-## License
-
-[MIT License or other appropriate license information to be added]
 
 ---
 

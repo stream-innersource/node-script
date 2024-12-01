@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  headless-browser:
+    build:
+      context: .
+    container_name: headless-browser
+    restart: unless-stopped
+    # Uncomment and modify port mapping if needed
+    ports:
+      - "9222:9222"
+    # Uncomment and add environment variables if needed
+    # environment:
+    #   - KEY=value
+    # Uncomment and modify volume mounts if needed
+    # volumes:
+    #   - ./data:/app/data 

@@ -1,0 +1,2 @@
+headless_server_amd64 filter=lfs diff=lfs merge=lfs -text
+headless_server_arm64 filter=lfs diff=lfs merge=lfs -text
